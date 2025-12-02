@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>YouTube</title>
-        <style>
-            .thumbnail{
-                width: 300px;
-                display:block;
-            }
-            .search-bar{
-                font-size: 20px;
-                display: block;
+  <head>
+    <title>YouTube</title>
+    <style>
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+      .search-bar {
+        font-size: 20px;
+        display: block;
+      }
+      
+      .video-preview {
+        display: inline-block;
+        margin-top: 15px;
+        vertical-align: top;
+        margin-right: 20px;
+      }
 
-            }
-            .video-title{
-                width: 300px;
-            }
-            .video-preview{
-                display: inline-block;
-                margin-top: 15px;
-                vertical-align: top;
-                margin-right: 20px;
-            }
-            .video-author{
-                display: inline-block;
-            }
-        </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <input class="search-bar" type="text" placeholder="Search">
-        <div class="video-preview">
-        <img class= "thumbnail" src="thumbnails/hq720.avif" alt="">
-        <p class="video-title">
-Speak Richer Prompts to ChatGPT. Flow Formats Them Perfectly for Better Results.</p>
-        <p>Sponsored &#183;
-Wispr Flow</p>
-        <button>Watch</button>
-        <button>Visit site</button>
+      .video-title{
+        margin-top: 0;
+      }
+      .video-author {
+        display: inline-block;
+      }
+      .channel-picture{
+        display:inline-block;
+        width:50px;
+        vertical-align: top;
+      }
+      .channel-picture img{
+        width: 100%;
+        border-radius:50%;
+      }
+      .video-info{
+        display: inline-block;
+        width: 200px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <input class="search-bar" type="text" placeholder="Search" />
+
+    <div class="video-preview">
+      <div>
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+      </div>
+      <div>
+        <div class="channel-picture">
+            <img src="channel-img/channel-1.jpeg" alt="">
         </div>
-
-
-        <div class="video-preview">
-        <img class= "thumbnail" src="thumbnails/t2.avif" alt="">
-        <p class="video-title">
-HTML & CSS Full Course - Beginner to Pro</p>
-<p class="video-author">SuperSimpleDev</p>
-<i class="fa fa-check-circle" style="color:rgb(104, 102, 102)"></i>
-
-        <p>17M views &#183;
-3 years ago</p>
-        
+        <div class="video-info">
+            <p class="video-title">
+          Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+        <p class="video-author">Marques Brownlee</p>
+        <p class="video-stats">3.4M views &#183; 6 months ago</p>
         </div>
         
-    </body>
+      </div>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="" />
+      <p class="video-title">Try Not To Laugh Challenge #9</p>
+      <p class="video-author">Markiplier</p>
+      <p class="video-stats">19M views &#183; 4 years ago</p>
+    </div>
+  </body>
 </html>
