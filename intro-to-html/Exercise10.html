@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+            font-style: arial;
+            margin-bottom: 4px;
+        }
+        .horizontal-container-1{
+            display: inline-flex;
+           
+            align-items: center;
+            border: 2px solid lightgray;
+            padding: 10px;
+        }
+        .cat-img .img-1{
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;;
+        }
+        .about-img{
+            margin-right: 100px;
+        }
+        .cat-name{
+            font-size: 16px;
+            font-weight: bold;
+           
+        }
+        .about-cat, .rating{
+            font-size: 14px;
+            color: gray;
+        }
+        .follow-btn{
+            background-color: rgb(94, 145, 215);
+            border: none;
+            padding: 8px;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        /* challenge exercise style */
+
+        p{
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+       
+        .profile-container{
+            border: 2px solid lightgray;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+        }
+        .profile{
+            width: 200px;
+            vertical-align: top;
+            margin-right: 15px;
+            box-shadow: 0 0
+        }
+       
+        .user-name{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .mutuals{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: rgb(92, 88, 88)
+        }
+        .mutuals img{
+            width: 30px;
+            border-radius: 50%;
+        }
+        .add-friend{
+            background-color: rgb(94, 145, 215);
+            border: none;
+            padding: 8px;
+            color: white;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal-container-1">
+        <div class="cat-img">
+            <img src="cat1.jpg" class="img-1">
+        </div>
+        <div class="about-img">
+            <p class="cat-name">oliver</p>
+            <p class="about-cat">the cat</p>
+            <p class="rating">Popular</p>
+        </div>
+        <div class="follow">
+            <button class="follow-btn">Follow</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Challenge exercise -->
+        <div class="profile-container">
+        <div class="profile">
+            
+                <img src="cat1.jpg">
+            
+                <p class="user-name">Oliver</p>
+                <div class="mutuals">
+                <img src="cat1.jpg" alt="" class="mutual-img">
+              
+                <p class="mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+       
+         <div class="profile">
+            
+                <img src="cat1.jpg">
+            
+                <p class="user-name">Oliver</p>
+                <div class="mutuals">
+                <img src="cat1.jpg" alt="" class="mutual-img">
+              
+               
+                <p class="mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+
+         <div class="profile">
+            
+                <img src="cat1.jpg">
+            
+                <p class="user-name">Oliver</p>
+                <div class="mutuals">
+                <img src="cat1.jpg" alt="" class="mutual-img">
+              
+                <p class="mutual-friends">2 mutual friends</p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            </div>
+</body>
+</html>
